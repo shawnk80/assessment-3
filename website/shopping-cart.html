@@ -10,7 +10,7 @@
   <script src="script.js" defer></script>
   <title>Red River - Shopping Cart</title>
 </head>
-<body>
+<body onload = "javascript:displayShoppingCart()">
   <header class="p-3 mb-3 border-bottom">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -28,5 +28,17 @@
       </div>
     </div>
   </header>
+  <main>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4 text-center">Thanks for Shopping with Red River Marketplace</h1>
+      </div>  
+    </div>
+    <h1>Your Shopping Cart</h1>
+    <div id = "cart-container">
+        <ul id = "cart-list">
+        </ul>
+    </div>
+  </main>
 </body>
 </html>

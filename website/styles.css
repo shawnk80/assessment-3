@@ -1,3 +1,13 @@
+* {
+  font-size: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+.jumbotron {
+  background-image: url("images/river.jpg");
+  background-size: cover;
+  height: 100%;}
+
 .card-img-top {
   width: 290px;
   height: 190px;
