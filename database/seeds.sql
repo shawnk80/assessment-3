@@ -39,15 +39,16 @@ INSERT into customers (first_name, last_name, email, phone, address_id) VALUES
 ('Justin', 'Verlander', 'cyyoungwinner@outlook.com', '2818675309', (SELECT id from addresses where city='New Karine')),
 ('Kate', 'Upton', 'supermodel@gmail.com', '2818675309', (SELECT id from addresses where city='New Karine')),
 ('Carlos', 'Correa', 'shortstopROY@astros.com', '2815550987', (SELECT id from addresses where city='Jamartown')),
-('Duke', 'Kahanamoku', 'og_surfer@yahoo.com', '8088675309', (SELECT id from addresses where city='Honolulu'));
+('Duke', 'Kahanamoku', 'og_surfer@yahoo.com', '8088675309', (SELECT id from addresses where city='Honolulu')),
+('Bugs', 'Bunny', 'whatsupdoc@warnerbros.com', '8005555555', (SELECT id from addresses where city='St Marys'));
 
-INSERT into orders (product_id, product_quantity, customer_id) VALUES
-((SELECT id from products where name='Playstation'), 1, (SELECT id from customers where last_name='Dolphin')),
-((SELECT id from products where name='TV'), 2, (SELECT id from customers where last_name='Dolphin')),
-((SELECT id from products where name='Sofa'), 2, (SELECT id from customers where last_name='Dolphin')),
-((SELECT id from products where name='Leaf Blower'), 1, (SELECT id from customers where last_name='Kahanamoku')),
-((SELECT id from products where name='Lawn Mower'), 1, (SELECT id from customers where last_name='Kahanamoku')),
-((SELECT id from products where name='The Great Gatsby'), 5, (SELECT id from customers where last_name='Lowe'));
+INSERT into orders (product_id, product_quantity, customer_id, order_date) VALUES
+((SELECT id from products where name='Playstation'), 1, (SELECT id from customers where last_name='Bunny'), '2020-07-03'),
+((SELECT id from products where name='TV'), 2, (SELECT id from customers where last_name='Bunny'), '2021-03-24'),
+((SELECT id from products where name='Sofa'), 2, (SELECT id from customers where last_name='Bunny'), '2021-05-24'),
+((SELECT id from products where name='Leaf Blower'), 1, (SELECT id from customers where last_name='Kahanamoku'), '2019-08-12'),
+((SELECT id from products where name='Lawn Mower'), 1, (SELECT id from customers where last_name='Kahanamoku'), '2019-12-17'),
+((SELECT id from products where name='The Great Gatsby'), 5, (SELECT id from customers where last_name='Lowe'), '2021-04-22');
 
 
 

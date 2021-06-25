@@ -39,7 +39,8 @@ create table orders (
     id serial primary key,
     product_id int,
     product_quantity int NOT NULL,
-    customer_id int
+    customer_id int,
+    order_date date NOT NULL
 );
 
 -- Every row in addresses table is assigned a primary key in serial order

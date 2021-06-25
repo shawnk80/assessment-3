@@ -1,0 +1,24 @@
+ first_name | last_name |        email         
+------------+-----------+----------------------
+ Blue       | Dolphin   | subguy07@gmail.com
+ Kate       | Upton     | supermodel@gmail.com
+(2 rows)
+
+     line1      | line2 |   city   | state | zipcode | id 
+----------------+-------+----------+-------+---------+----
+ 105 The Strand |       | St Marys | GA    | 31558   |  1
+(1 row)
+
+ id |    name    | cost | quantity | category_id 
+----+------------+------+----------+-------------
+  5 | Chef Knife |   30 |       55 |           3
+  6 | Dish Soap  |    3 |      197 |           3
+(2 rows)
+
+    name     | cost 
+-------------+------
+ Playstation |  350
+ TV          |  275
+ Sofa        |    6
+(3 rows)
+
