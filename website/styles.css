@@ -12,3 +12,17 @@
   width: 290px;
   height: 190px;
 }
+
+.list-group {
+  color:gray;
+  bg: white;
+  border-color: black;
+  justify-content: center;
+}
+
+.list-group-item{
+  position: relative;
+  display: block;
+  padding: .75rem 1.25rem;
+}
+

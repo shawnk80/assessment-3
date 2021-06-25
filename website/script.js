@@ -41,8 +41,21 @@ function getCurrentShoppingCart() {
 
    for (i = 0; i < currentCart.length; i++) {
      let newCartItem = document.createElement('li');
-     newCartItem.className = "cart-list-item";
+     newCartItem.className = "list-group-item cart-list-item";
      newCartItem.innerHTML = currentCart[i];
      cartList.appendChild(newCartItem);
    }
+ }
+
+ function clearCart() {
+   localStorage.clear();
+   let cartList = document.getElementById('cart-list')
+   if (!cartList) {
+      return;
+      }
+
+   while( cartList.firstChild ){
+    cartList.removeChild( cartList.firstChild );
+  }
+
  }
