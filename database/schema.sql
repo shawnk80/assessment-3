@@ -49,7 +49,7 @@ create table addresses (
     line2 varchar(64),
     city varchar(32) NOT NULL,
     state varchar(2) NOT NULL,
-    zip varchar(9) NOT NULL
+    zipcode varchar(9) NOT NULL
 );
 
 -- Establish foreign key relationships between 
