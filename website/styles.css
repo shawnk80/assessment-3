@@ -3,17 +3,28 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
  }
 
+.background-color{
+  background-color: #fed3a8;
+}
+
 .jumbotron {
   background-image: url("images/river.jpg");
   background-size: cover;
   height: 100%;}
 
+.card {
+  background-color: #fed3a8;
+  border: none;
+  border-radius: 20%
+}
+
 .card-img-top {
-  width: 290px;
+  max-width: 290px;
   height: 190px;
 }
 
 .list-group {
+  list-style: none;
   color:gray;
   bg: white;
   border-color: black;

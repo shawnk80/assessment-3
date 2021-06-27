@@ -58,14 +58,15 @@ function getCurrentShoppingCart() {
      cartList.appendChild(newCartItem);
    }
 
-   let totalCostItem = document.createElement("li");
-   totalCostItem.class = "list-group-item d-flex justify-content-between";
+   let totalCostItem = document.createElement('li');
+   totalCostItem.className = "list-group-item d-flex justify-content-between lh-sm cart-list-item";
    
-   let displayCostItem = document.createElement("span");
+   let displayCostItem = document.createElement("h6");
+   displayCostItem.className = "my-0";
    displayCostItem.innerHTML = "Total (USD)"
    totalCostItem.appendChild(displayCostItem);
 
-   let totalCostDisplayItem = document.createElement("strong")
+   let totalCostDisplayItem = document.createElement("span")
    totalCostDisplayItem.innerHTML = `$${cartTotal}`;
    totalCostItem.appendChild(totalCostDisplayItem);
 

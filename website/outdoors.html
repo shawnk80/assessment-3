@@ -11,58 +11,62 @@
   <title>Red River - Outdoors</title>
 </head>
 <body>
-  <header class="p-3 mb-3 border-bottom">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-          <svg class="bi me-2" width="40" height="32" role="img" aria-label="RedRiver"><use href="red-river-icon.png"></use></svg>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFA582;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/red-river-icon.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
         </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="outdoors.html" class="nav-link">Outdoors</a></li>
+            <li class="nav-item"><a href="kitchen.html" class="nav-link">Kitchen</a></li>
+            <li class="nav-item"><a href="bedroom.html" class="nav-link">Bedroom</a></li>
+            <li class="nav-item"><a href="shopping-cart.html" class="nav-link">Shopping Cart</a></li>
+          </ul>
 
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-right mb-md-0">
-          <li><a href="index.html" class="nav-link px-2 link-secondary">Home</a></li>
-          <li><a href="outdoors.html" class="nav-link px-2 link-dark">Outdoors</a></li>
-          <li><a href="kitchen.html" class="nav-link px-2 link-dark">Kitchen</a></li>
-          <li><a href="bedroom.html" class="nav-link px-2 link-dark">Bedroom</a></li>
-          <li><a href="shopping-cart.html" class="nav-link px-2 link-dark">Shopping Cart</a></li>
-        </ul>
+        </div>
       </div>
-    </div>
+    </nav>
   </header>
   <main>
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4 text-center">Shop for the Great Outdoors at Red River Marketplace</h1>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="images/leaf_blower.jpg" class="card-img-top" alt="Leaf Blower">
-            <div class="card-body">
-              <h5 class="card-title">Leaf Blower</h5>
-              <p class="card-text">$100</p>
-              <a href="#" class="btn btn-primary" onclick="addItemToCart(0)">Buy me!</a>
-            </div>
-          </div>
-         </div>
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="images/lawn-mower.jpeg" class="card-img-top" alt="Lawn Mower">
-            <div class="card-body">
-              <h5 class="card-title">Lawn Mower</h5>
-              <p class="card-text">$375!</p>
-              <a href="#" class="btn btn-primary" onclick="addItemToCart(1)">Buy me!</a>
-            </div>
-          </div>
+    <div class="background-color">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4 text-center">Shop for the Great Outdoors at Red River Marketplace</h1>
         </div>
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="images/hose.jpeg" class="card-img-top" alt="Hose">
-            <div class="card-body">
-              <h5 class="card-title">Hose</h5>
-              <p class="card-text">$20</p>
-              <a href="#" class="btn btn-primary" onclick="addItemToCart(2)">Buy me!</a>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="images/leaf_blower.jpg" class="card-img-top" alt="Leaf Blower">
+              <div class="card-body">
+                <h5 class="card-title">Leaf Blower</h5>
+                <p class="card-text">$100</p>
+                <a href="#" class="btn btn-primary" onclick="addItemToCart(0)">Buy me!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card rounded" style="width: 18rem;">
+              <img src="images/lawn-mower.jpeg" class="card-img-top" alt="Lawn Mower">
+              <div class="card-body">
+                <h5 class="card-title">Lawn Mower</h5>
+                <p class="card-text">$375!</p>
+                <a href="#" class="btn btn-primary" onclick="addItemToCart(1)">Buy me!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="images/hose.jpeg" class="card-img-top" alt="Hose">
+              <div class="card-body">
+                <h5 class="card-title">Hose</h5>
+                <p class="card-text">$20</p>
+                <a href="#" class="btn btn-primary" onclick="addItemToCart(2)">Buy me!</a>
+              </div>
             </div>
           </div>
         </div>
